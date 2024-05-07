@@ -1,7 +1,7 @@
 Page({
   data: {
-    username: '',
-    password: ''
+    username: 'admin',
+    password: '123456'
   },
   bindUsernameInput: function(event) {
     this.setData({
@@ -15,7 +15,7 @@ Page({
   },
   login: function() {
     if (this.data.username === 'admin' && this.data.password === '123456') {
-      wx.navigateTo({
+      wx.switchTab({
         url: '/pages/index/index'
       });
     } else {

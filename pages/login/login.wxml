@@ -1,9 +1,9 @@
 <view class="container">
   <view class="input-container">
-    <input class="input-box" type="text" placeholder="请输入用户名" bindinput="bindUsernameInput"/>
+    <input class="input-box" value="{{username}}" type="text" placeholder="请输入用户名" bindinput="bindUsernameInput"/>
   </view>
   <view class="input-container">
-    <input class="input-box" type="password" placeholder="请输入密码" bindinput="bindPasswordInput"/>
+    <input class="input-box" value="{{password}}" type="password" placeholder="请输入密码" bindinput="bindPasswordInput"/>
   </view>
   <button class="login-button" bindtap="login">登录</button>
 </view>
