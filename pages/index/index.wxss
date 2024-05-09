@@ -19,6 +19,7 @@
   margin-bottom: 15px;
 }
 
+
 .info-label {
   width: 100px;
   color: #333;

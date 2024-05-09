@@ -3,5 +3,6 @@
   "projectname": "cyy",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.4.0"
 }
