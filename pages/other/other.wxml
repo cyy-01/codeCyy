@@ -1,3 +1,38 @@
-<view>
-   我是其他页面
+<view class="container">
+  <view class="header">
+    <!-- <text class="title">姨妈推算器</text> -->
+  </view>
+
+  <view class="other">
+    <view class="label">选择日期：</view>
+    <view class="daka" bindtap="showPicker">
+      <text class="date-display">{{ selectedDate || '点击选择日期' }}</text>
+    </view>
+  </view>
+  <view class="other">
+    <view class="label">正常日期：</view>
+    <view class="daka">
+      <text class="date-display">{{ zcDate || '暂无'}}</text>
+    </view>
+  </view>
+  <view class="other">
+    <view class="label">范围日期：</view>
+    <view class="daka">
+      <text class="date-display">{{ nextDateRange || '暂无'}}</text>
+    </view>
+  </view>
+
+  <van-popup show="{{ showPickerPopup }}" position="bottom" bind:close="closePicker">
+    <van-datetime-picker
+      type="date"
+      value="{{ currentDate }}"
+      bind:confirm="onConfirm"
+      bind:cancel="closePicker"
+      bind:input="onInput"
+    />
+  </van-popup>
+
+  <view class="footer">
+    <button class="logout-btn" bindtap="logOut">退出登录</button>
+  </view>
 </view>

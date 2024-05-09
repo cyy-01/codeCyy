@@ -1,1 +1,63 @@
-/* pages/other/other.wxss */
+/* 页面整体容器 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 标题样式 */
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 选择日期的容器 */
+.other {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.daka {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date-display {
+  font-size: 16px;
+  color: #555;
+}
+
+.footer {
+  margin-top: 300px;
+}
+
+.logout-btn {
+  background-color: #227377;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+  background-color: #e53e3e;
+}

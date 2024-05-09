@@ -9,7 +9,6 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarBackgroundColor": "#ffffff"
   },
-  "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
@@ -24,7 +23,7 @@
       },
       {
         "pagePath": "pages/other/other",
-        "text": "其他",
+        "text": "姨妈推算",
         "iconPath": "/images/other.png",
         "selectedIconPath": "/images/other.png"
       }
